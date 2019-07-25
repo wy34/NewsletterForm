@@ -1,0 +1,192 @@
+/* ===============
+   All
+   =============== */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+/* ===============
+   Shared Styles
+   =============== */
+
+header,
+.call-to-action,
+footer {
+    text-align: center;  
+}
+
+header h1,
+.call-to-action h1,
+legend {
+    font-size: 1.25em;
+}
+
+.call-to-action p,
+label,
+footer {
+    font-size: 0.9em;
+}
+
+.fieldset1 input:not([id*="zip"]),
+#state,
+textarea,
+button {
+    width: 100%
+}
+
+.fieldset1 input,
+select,
+textarea, 
+button {
+    height: 47px;
+    border-radius: 7px;
+    border: none;
+    background-color: #f0edeb;
+    margin-top: 10px;
+}
+
+header,
+.fieldset1 legend,
+.fieldset2 legend,
+.fieldset2 label:nth-of-type(4),
+.fieldset2 label:nth-of-type(7) {
+    margin-bottom: 26px;
+}
+
+.call-to-action,
+.fieldset1 {
+    padding-bottom: 30px;
+    margin-bottom: 25px;
+}
+
+.fieldset1 label,
+.fieldset2 label {
+    color: #5c5b5a;
+}
+
+.fieldset1 label:not([for="name"]),
+.fieldset2 label[for] {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+textarea,
+button {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+/* ===============
+   Header
+   =============== */
+
+header {
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    padding: 28px;
+}
+
+
+
+
+
+
+/* ===============
+   Main
+   =============== */
+main {
+    width: 90%;
+    margin: auto;
+}
+
+.call-to-action {
+    border-bottom: double 8px;
+}
+
+.call-to-action h1 {
+    margin-bottom: 12px;
+}
+
+.call-to-action p {
+    color: #a3a2a0;
+}
+
+fieldset {
+    border: none;
+}
+
+.fieldset1 {
+    border-bottom: solid 2px black;
+}
+
+#zip {
+    width: 50%;
+}
+
+::placeholder {
+    text-align: right;
+    font-style: italic;
+    padding-right: 17px;
+    font-size: 12px;
+}
+
+.fieldset2 input {
+    margin-right: 10px;
+}
+
+.fieldset2 label[for="comment"] {
+    margin: 0;
+}
+
+textarea {
+    height: 90px;
+}
+
+button {
+    margin-top: 0;
+    background-color: #18cc8d;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============
+   Footer
+   =============== */
+/*none*/
+
+
+
+
+
+
+
+
