@@ -40,7 +40,8 @@ footer {
 #state,
 textarea,
 button {
-    width: 100%
+    width: 100%;
+    max-width: 500px;
 }
 
 .fieldset1 input,
@@ -111,6 +112,7 @@ header {
    =============== */
 main {
     width: 90%;
+    max-width: 500px;
     margin: auto;
 }
 
@@ -133,6 +135,20 @@ fieldset {
 .fieldset1 {
     border-bottom: solid 2px black;
 }
+
+
+
+.fieldset1 input[type="text"] {
+    background-color: #f0edeb;
+    transition: 0.6s;
+}
+
+.fieldset1 input[type="text"]:focus {
+    background-color: rgb(198, 198, 236);
+    transition: 0.6s;
+}
+
+
 
 #zip {
     width: 50%;
@@ -173,11 +189,6 @@ button {
 
 
 
-
-
-
-
-
 /* ===============
    Footer
    =============== */
@@ -187,6 +198,45 @@ button {
 
 
 
+/* ===============
+    Media Queries
+   =============== */
+@media (min-width: 768px) {
+
+    .input {
+        display: flex;
+    }
+
+    .input label,
+    .input input,
+    select {
+        flex: 1;
+    }
+
+    .input input,
+    select {
+        flex-grow: 3;
+    }
+
+    .fieldset1:first-child label {
+        margin-top: 1em;
+    }
+
+    .input input,
+    select,
+    .short input {
+        margin-top: 0;
+    }
+
+    .short {
+        display: flex;
+        width: 50%;
+    }
+
+    .short label,
+    .short input {
+        flex: 1;
+    } 
 
 
-
+}
